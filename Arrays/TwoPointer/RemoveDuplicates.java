@@ -1,3 +1,18 @@
+/*
+Problem: Remove Duplicates from Sorted Array
+
+Pattern: Two Pointer
+
+Approach:
+- Use two pointers:
+  i -> points to the last unique element.
+  j -> traverses the array.
+- Whenever a new element is found, move i forward and copy the new element.
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+*/
+
 public class RemoveDuplicates {
 
     public static int removeDuplicates(int[] a) {
