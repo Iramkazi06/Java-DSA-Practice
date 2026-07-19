@@ -1,3 +1,14 @@
+# Java compiled files
 *.class
+
+# VS Code
 .vscode/
+
+# Logs
 debug.log
+
+# Personal practice files (not uploading yet)
+collections.java
+dsa.java
+patterns.java
+search.java
