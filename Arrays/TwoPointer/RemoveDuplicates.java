@@ -12,7 +12,7 @@ Approach:
 Time Complexity: O(n)
 Space Complexity: O(1)
 */
-
+package Arrays.TwoPointer;
 public class RemoveDuplicates {
 
     public static int removeDuplicates(int[] a) {
@@ -43,5 +43,32 @@ System.out.println(" ");
             System.out.print(a[i] + " ");
 }
         
+    }
+}
+
+// leetcode problem 26
+//solution
+//Because the array is sorted, duplicates appear together.
+
+//By comparing each element with the previous one, we can copy only unique elements forward using a second pointer.
+
+//This allows us to remove duplicates in-place without extra memory.
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        if (nums.length == 0) {
+            return 0;
+        }
+
+        int k = 1;
+
+        for (int i = 1; i < nums.length; i++) {
+
+            if (nums[i] != nums[i - 1]) {
+                nums[k] = nums[i];
+                k++;
+            }
+        }
+
+        return k;
     }
 }
