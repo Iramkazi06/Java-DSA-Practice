@@ -1,7 +1,7 @@
 // this is the better approach and the time complexity is O(2n)
 //In this we consider counter for 0/1/2 everytime we encounter 0/1/2 we update the counter of the respective element by 1
 //this way it stores 0s 1s and 2s 
-//and after storing we  add those elemnts to the array in a sorted manner 
+//and after storing we  add those elemnts to the array in a sorted manner
 class SortZerosOnesTwos {
     public static void sort(int[]nums){
         int count0=0;
