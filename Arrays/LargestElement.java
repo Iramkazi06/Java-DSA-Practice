@@ -1,17 +1,18 @@
-package  Arrays;
-public class LargestElement{
+package Arrays;
 
-    public static int Largest(int[]arr){
-int largest=arr[0];
-for(int i=1;i<arr.length;i++){
-    if(largest<arr[i]){
-        largest=arr[i];
+public class LargestElement{
+public static int maxelement(int[]arr){
+    int max=arr[0];
+for(int i=0;i<arr.length;i++){
+    if(arr[i]>max){
+        max=arr[i];
     }
 }
-return largest;
-    }
-    public static void main(String[] args) {
-        int[]arr={5,6,3,9,1,7,11};
-        System.out.println(Largest(arr));
-    }
+return max;
+
 }
+    public static void main(String[]args){
+int[]arr={8,3,5,6,8,9,0,3,1};
+System.out.print("The Largest Elemnt In the Array is:"+ maxelement(arr));
+
+}}
